@@ -10,8 +10,9 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin:'https://polling-voting-app.netlify.app/',
-  methods: "GET,POST,UPDATE,DELETE"
+  origin:'https://65ffe1a1cc88cd0008c8ea3a--polling-voting-app.netlify.app/',
+  methods: 'GET, POST, PUT, PATCH, DELETE, HEAD',
+    credentials: true,
 }));
 
 // Connect to MongoDB
