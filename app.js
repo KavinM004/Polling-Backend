@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin:'https://65ffe1a1cc88cd0008c8ea3a--polling-voting-app.netlify.app/',
+  origin:'https://kavinm004.github.io/Polling-Frontend/',
   methods: 'GET, POST, PUT, PATCH, DELETE, HEAD',
     credentials: true,
 }));
