@@ -4,16 +4,14 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const pollingRoutes = require('./routes/pollingRoutes');
 const partyRoutes = require('./routes/partyRoutes');
-
-
 const app = express();
-
-app.use(express.json());
 app.use(cors({
   origin:'https://kavinm004.github.io/Polling-Frontend',
   methods: 'GET, POST, PUT, PATCH, DELETE, HEAD',
     credentials: true,
 }));
+app.use(express.json());
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MongoDB_URL)
