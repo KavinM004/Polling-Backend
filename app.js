@@ -6,7 +6,7 @@ const pollingRoutes = require('./routes/pollingRoutes');
 const partyRoutes = require('./routes/partyRoutes');
 const app = express();
 app.use(cors({
-  origin:'https://kavinm004.github.io',
+  origin:'https://polling-voting-app.netlify.app/',
   methods: 'GET, POST, PUT, PATCH, DELETE, HEAD',
     credentials: true,
 }));
