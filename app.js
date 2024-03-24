@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin:'https://kavinm004.github.io/Polling-Frontend/',
+  origin:'https://kavinm004.github.io/Polling-Frontend',
   methods: 'GET, POST, PUT, PATCH, DELETE, HEAD',
     credentials: true,
 }));
